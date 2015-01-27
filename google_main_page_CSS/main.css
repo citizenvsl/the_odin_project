@@ -1,0 +1,172 @@
+/*Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {    margin: 0;  padding: 0; border: 0;  font-size: 100%;    font: inherit;  vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {    display: block;}body {  line-height: 1;}ol, ul {    list-style: none;}blockquote, q {   quotes: none;}blockquote:before, blockquote:after,q:before, q:after {   content: '';    content: none;}table {  border-collapse: collapse;  border-spacing: 0;}
+
+/*********************************************************************************** TOP AREA *********************************************************************************/
+
+
+.top {
+	position: absolute;
+	right: 0;
+	top:4%;
+	height: 3%;
+	background-color: ;
+	width: 30%;
+}
+
+li {display: inline-block;
+	margin-right: 2%;
+	margin-top: 1%;
+	}
+#photo {
+	position: absolute;
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	top:2%;
+}
+
+
+.nav_bar {
+	
+	display: inline-block;
+	position: relative;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: ;
+}
+
+.nav_bar img {
+	height: 20px;
+	width: 20px;
+
+
+}
+
+#squares{
+	
+	width: 25px;
+	height: 25px;
+}
+
+#s1,#s2,#s3,#s4,#s5,#s6,#s7,#s8,#s9 {
+	
+	height: 5px;
+	width: 5px;
+	background-color: black;
+	display: inline-block;
+}
+#line1, #line2, #line3 {
+	display: block;
+	margin: -9px 0;
+	background-color:;
+	padding: 0;
+}
+#middle {
+	position: relative;
+	clear: right;
+	position: absolute;
+	margin: auto;
+	bottom: 40%;
+	background-color: #fff;
+	height: 190px;
+	width: 100%;
+
+}
+#middle > img {
+
+	position: relative;
+	display: block;
+	margin: auto;
+	width:20%;     	/*269px*/
+	height: 45%;		/*95px*/
+	margin-bottom: 25px;
+}
+
+
+form  {
+	position: absolute;
+	margin: auto;
+	width: 100%;
+	height: 100px;
+	
+}
+#inside_form {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+}
+#search {
+	position: relative;
+	display: inline-block;
+	left: 29%;
+	width: 42%;
+	height: 26px;
+	border: 1px solid blue;
+}
+#mic {
+	margin-top:1px;
+	position: absolute;
+	right: 29%;
+	width: 26px;
+	height: 26px;
+	display: inline-block;
+}
+#submit {
+	position: relative;
+	width: 100%;
+	height: 70%;
+	margin: 1% auto ;
+	
+}
+#submit input {
+	position: relative;
+	text-align: center;
+	left: 40%;
+	width: 9%;
+	height: 42%;
+	font-size: 0.7em;
+	background-color: #FAFAFA;
+	font-weight: bold;
+	border: 1px solid lightgrey;
+	margin-right: 1%;
+}
+
+
+footer {
+	position: absolute;
+	bottom: 0;
+	margin:auto;
+	display: inline;
+	width: 100%;
+	height: 7%;
+	background-color:#F1F0F2;
+	font-size: 0.9em;
+}
+li {
+	
+	margin-left: 2%;
+}
+
+.li_left {display: inline;
+	margin-left: 3%;
+	position: relative;
+	float: left;
+}
+
+
+.li_right {
+	display: inline;
+	float: right;
+	margin-right: 2%;
+	position: relative;
+}
+
+
+
+
+
+
+
+

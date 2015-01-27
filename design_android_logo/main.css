@@ -1,0 +1,164 @@
+div {
+	margin: 0;
+	padding: 0;
+
+}
+
+
+.android {
+	
+	/*position: relative;
+	right: 50%;*/
+	position: relative;
+	right: 40%;
+	
+	height: 404px;
+	margin: 100px auto;
+}
+
+.head {
+	background-color: #A4CA39;
+	position: relative;
+	height: 120px;
+	border-radius: 110px 110px 0 0 ;
+	width: 220px; 
+	float: right;
+
+}
+.l_ant {position: absolute;
+		top: -10%;
+		left: 20%;
+		background-color: #A4CA39;
+		height: 40px;
+		width: 10px;
+		/*border: 2px solid black;*/
+		}
+.r_ant {position: absolute;
+		top: -10%;
+		right: 20%;
+		background-color: #A4CA39;
+		height: 40px;
+		width: 10px;
+		/*border: 2px solid black;*/
+		
+		}
+.l_eye {
+		position: absolute;
+		top: 40%;
+		left: 25%;
+		background: #fff;
+		/*border: 2px solid black;*/
+		
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+
+}
+.r_eye {
+		position: absolute;
+		top: 40%;
+		right: 25%;
+		background: #fff;
+		/*border: 2px solid black;*/
+		
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+}
+.body { clear: right;
+		top: 5px;
+		position: relative;
+		float: right;
+		width: 220px;
+		height: 220px;
+		background-color: #A4CA39;
+		/*border: 2px solid black;*/
+		border-radius: 0 0 25px 25px;
+
+}
+.l_arm {
+		position: absolute;
+		width: 60px;
+		height: 160px;
+		left: -70px;
+		border-radius: 40px;
+		background-color: #A4CA39;
+		
+}
+.r_arm {
+		position: absolute;
+		width: 60px;
+		height: 160px;
+		right: -70px;
+		border-radius: 40px;
+		background-color: #A4CA39;
+		
+}
+.l_leg {
+		position: absolute;
+		top: 225px;
+		right: 33px;
+		height: 80px;
+		width: 60px;
+		border-radius: 0 0 40px 40px;
+		background-color: #A4CA39;
+}
+
+.r_leg {
+		position: absolute;
+		top: 225px;
+		left: 33px;
+		height: 80px;
+		width: 60px;
+		border-radius: 0 0 40px 40px;
+		background-color: #A4CA39;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

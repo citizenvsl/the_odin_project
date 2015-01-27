@@ -1,0 +1,137 @@
+
+	<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="CSS/main.css">
+<link href='http://fonts.googleapis.com/css?family=Nixie+One|BenchNine|Poiret+One|Special+Elite' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+    <div class= "container">
+
+        <br><br><p id = "cheer_p"> < Enjoy your painting! ></p><br>
+
+    </div>
+    <ul class="buttons">
+        <p> Which effect? </p>
+        <li><button id="regular">Regular</button></li>
+        <li><button id="random">Random</button></li>
+        <li><button id="adding">Cool eraser</button></li>
+        <li><button id="clean">Clean</button></li>
+        <li><a href="file:///C:/Users/VSL/Desktop/Coding/JAVASCRIPT/Etch_a_sketch/index.html"><button id="reset" >Reset</button></a></li>
+    </ul>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+ <script type="text/javascript">
+
+var number = +prompt("How many squares? (from 1 to 150)");
+var cellWidth = 600 / number;
+var cellHeight = 600 / number;
+
+var tableAddition = function() {   $(".container").append('<table class = "table"></table').css({
+        'margin' : '0 auto',
+        'padding' : '0 0',
+        'height' : cellHeight + 2 + 'px' ,
+        'width' : 'auto',
+        'border' : '0px',
+        'background-color' : 'transparent',
+        'border-collapse' : 'collapse',
+        'position' : 'absolute',
+        'left' : '25%',
+        'top' : '10%'
+});
+}
+
+//Loop to create the tables
+
+var createTables = function() {
+var oneless = number - 1;
+for (var i = oneless; i >= 0; i--) {
+        tableAddition ();
+}
+};
+
+ //Loop to create the squares (cells)   
+
+var createSquares = function()  {
+  $(".table").append('<tr class= "new_row"></tr/>').css({
+       'font-size' : '10px',
+       'width' : cellWidth * number + 2 + 'px',
+       'height' : cellHeight + 2 + 'px',
+       'background-color' : 'blue',
+       'border-collapse' : 'collapse',
+       'margin' : '0',
+       'padding' : '0',
+       'cellspacing' : '0'
+     });
+
+  while (number >0) {
+    $(".new_row").append("<td></td>").css({
+   'font-size' : '10px',
+   'width' : cellWidth + 'px',
+   'height' : cellHeight + 'px',
+   'background-color' : 'tomato',
+   'border-collapse' : 'collapse',
+   'margin' : '0',
+   'padding' : '0',
+   'cellspacing' : '0'
+
+     }); number = number -1
+     } 
+};
+
+//fuction to create tables (like a skeleton for the cells)
+
+createTables ();
+
+//function to fill the tables with squares (which are the cells within the table)
+
+createSquares ();
+
+//styling of the buttons and their performance
+
+var regular = function() {   $("td").on("mouseover", function(){
+    $(this).css("background-color", "lightblue").on("mouseleave", function(){$(this).css("background-color", "black")})
+}); };
+
+var random = function() {$("td").on("mouseover", function(){
+    $(this).css("background-color" , "#" + (Math.random() * 12345) );
+}) };
+
+var multitrace = function() {$("td").on("mouseover", function(){
+    $(this).animate({backgroundColor: "green"}, "slow").on("mouseleave", function(){$(this).animate({backgroundColor: "turquoise"}, "slow")})
+}); };
+
+var clean = function() {$("td").css({backgroundColor: "tomato"}, "slow")};
+
+// Buttons and their click functions
+
+$("html").on("mouseover", function(){$("#cheer_p").fadeIn("fast")});
+$("html").on("mouseover", function(){$(".buttons").fadeIn("slow")});
+
+//Click handlers
+
+$("#regular").on("click", function(){
+    regular ();
+});
+   
+$("#random").on("click", function(){
+     random (); 
+});
+
+$("#adding").on("click", function(){
+     multitrace ();
+});
+
+$("#clean").on("click", function(){
+     clean ();
+});
+
+</script>
+
+</body >
+</html>
